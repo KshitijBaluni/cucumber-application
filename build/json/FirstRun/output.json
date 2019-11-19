@@ -1,0 +1,725 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 491827,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login with correct username and correct password",
+        "description": "",
+        "id": "free-crm-application-testing;login-with-correct-username-and-correct-password",
+        "after": [
+          {
+            "result": {
+              "duration": 168331,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 199963897,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "This is a valid login test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_valid_login_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 209821,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Create a contact",
+        "description": "",
+        "id": "free-crm-application-testing;create-a-contact",
+        "after": [
+          {
+            "result": {
+              "duration": 163673,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 395053,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "This is a contact test case",
+            "match": {
+              "location": "TagDefinitions.this_is_a_contact_test_case()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 177866,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Create a deal",
+        "description": "",
+        "id": "free-crm-application-testing;create-a-deal",
+        "after": [
+          {
+            "result": {
+              "duration": 163502,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 357038,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "This is a deal test case",
+            "match": {
+              "location": "TagDefinitions.this_is_a_deal_test_case()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2565585,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Create a case",
+        "description": "",
+        "id": "free-crm-application-testing;create-a-case",
+        "after": [
+          {
+            "result": {
+              "duration": 162171,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 450083,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "This is a case test case",
+            "match": {
+              "location": "TagDefinitions.this_is_a_case_test_case()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 169647,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Verify left panel links",
+        "description": "",
+        "id": "free-crm-application-testing;verify-left-panel-links",
+        "after": [
+          {
+            "result": {
+              "duration": 160533,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 380120,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "clicking on left panel links",
+            "match": {
+              "location": "TagDefinitions.clicking_on_left_panel_links()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 163757,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Search a deal",
+        "description": "",
+        "id": "free-crm-application-testing;search-a-deal",
+        "after": [
+          {
+            "result": {
+              "duration": 154146,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 439201,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "This is a search deal test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_search_deal_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 150300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Search a contact",
+        "description": "",
+        "id": "free-crm-application-testing;search-a-contact",
+        "after": [
+          {
+            "result": {
+              "duration": 145156,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 324745,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "This is a search contact test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_search_contact_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 361516,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Search a case",
+        "description": "",
+        "id": "free-crm-application-testing;search-a-case",
+        "after": [
+          {
+            "result": {
+              "duration": 306775,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 384977,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "This is a search case test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_search_case_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 157526,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "Search a task",
+        "description": "",
+        "id": "free-crm-application-testing;search-a-task",
+        "after": [
+          {
+            "result": {
+              "duration": 156882,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 314128,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "This is a search task test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_search_task_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 170066,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "Search a call",
+        "description": "",
+        "id": "free-crm-application-testing;search-a-call",
+        "after": [
+          {
+            "result": {
+              "duration": 158406,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 396433,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "This is a search call test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_search_call_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 166396,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "Search an email",
+        "description": "",
+        "id": "free-crm-application-testing;search-an-email",
+        "after": [
+          {
+            "result": {
+              "duration": 171292,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2316067,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "This is a search email test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_search_email_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 195126,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 57,
+        "name": "Search a docs",
+        "description": "",
+        "id": "free-crm-application-testing;search-a-docs",
+        "after": [
+          {
+            "result": {
+              "duration": 227757,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 356402,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "This is a search docs test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_search_docs_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 210238,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "Search a forms",
+        "description": "",
+        "id": "free-crm-application-testing;search-a-forms",
+        "after": [
+          {
+            "result": {
+              "duration": 141563,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 381433,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "This is a search forms test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_search_forms_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@End2End"
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM application testing",
+    "description": "",
+    "id": "free-crm-application-testing",
+    "keyword": "Feature",
+    "uri": "/home/kshitijbaluni/IdeaProjects/cucumber-application/src/test/resources/tag.feature",
+    "tags": [
+      {
+        "name": "@FunctionalTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
