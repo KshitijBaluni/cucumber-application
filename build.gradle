@@ -59,7 +59,7 @@ task cucumber() {
                 cucumberTag = new String()
             }
 
-            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', '/home/kshitijbaluni/IdeaProjects/cucumber-application/src/test/resources/tag.feature', cucumberTagArgument, cucumberTag]
+            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', '/src/test/resources/tag.feature', cucumberTagArgument, cucumberTag]
 
         }
     }
