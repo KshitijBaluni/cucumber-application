@@ -1,7 +1,5 @@
 package steps;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import org.junit.Assert;
 
@@ -13,6 +11,7 @@ public class TagDefinitions {
     @Given("^This is a valid login test$")
     public void this_is_a_valid_login_test() {
         System.out.println("Thread ID :" + Thread.currentThread().getId() + " - Tag Feature");
+        Assert.fail();
     }
 
     @Given("^This is a invalid login test$")
