@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/home/kshitijbaluni/IdeaProjects/cucumber-application/src/test/resources/tag.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/tag.feature");
 formatter.feature({
   "name": "Free CRM application testing",
   "description": "",
@@ -409,6 +409,36 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "browser closed",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@FunctionalTest"
+    },
+    {
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "This is a close browser test",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TagDefinitions.this_is_a_close_browser_test()"
+});
+formatter.result({
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[2]\u003e but was:\u003c[0]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat steps.TagDefinitions.this_is_a_close_browser_test(TagDefinitions.java:128)\n\tat ✽.This is a close browser test(src/test/resources/tag.feature:74)\n",
+  "status": "failed"
 });
 formatter.after({
   "status": "passed"

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 491827,
+              "duration": 360236,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 168331,
+              "duration": 113414,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 199963897,
+              "duration": 268632118,
               "status": "passed"
             },
             "line": 6,
@@ -61,7 +61,7 @@
         "before": [
           {
             "result": {
-              "duration": 209821,
+              "duration": 100973,
               "status": "passed"
             },
             "match": {
@@ -76,7 +76,7 @@
         "after": [
           {
             "result": {
-              "duration": 163673,
+              "duration": 89609,
               "status": "passed"
             },
             "match": {
@@ -89,7 +89,7 @@
         "steps": [
           {
             "result": {
-              "duration": 395053,
+              "duration": 1245363,
               "status": "passed"
             },
             "line": 14,
@@ -113,7 +113,7 @@
         "before": [
           {
             "result": {
-              "duration": 177866,
+              "duration": 95375,
               "status": "passed"
             },
             "match": {
@@ -128,7 +128,7 @@
         "after": [
           {
             "result": {
-              "duration": 163502,
+              "duration": 65417,
               "status": "passed"
             },
             "match": {
@@ -141,7 +141,7 @@
         "steps": [
           {
             "result": {
-              "duration": 357038,
+              "duration": 277967,
               "status": "passed"
             },
             "line": 18,
@@ -168,7 +168,7 @@
         "before": [
           {
             "result": {
-              "duration": 2565585,
+              "duration": 107078,
               "status": "passed"
             },
             "match": {
@@ -183,7 +183,7 @@
         "after": [
           {
             "result": {
-              "duration": 162171,
+              "duration": 104194,
               "status": "passed"
             },
             "match": {
@@ -196,7 +196,7 @@
         "steps": [
           {
             "result": {
-              "duration": 450083,
+              "duration": 299591,
               "status": "passed"
             },
             "line": 26,
@@ -220,7 +220,7 @@
         "before": [
           {
             "result": {
-              "duration": 169647,
+              "duration": 103703,
               "status": "passed"
             },
             "match": {
@@ -235,7 +235,7 @@
         "after": [
           {
             "result": {
-              "duration": 160533,
+              "duration": 94525,
               "status": "passed"
             },
             "match": {
@@ -248,7 +248,7 @@
         "steps": [
           {
             "result": {
-              "duration": 380120,
+              "duration": 288970,
               "status": "passed"
             },
             "line": 30,
@@ -275,7 +275,7 @@
         "before": [
           {
             "result": {
-              "duration": 163757,
+              "duration": 96493,
               "status": "passed"
             },
             "match": {
@@ -290,7 +290,7 @@
         "after": [
           {
             "result": {
-              "duration": 154146,
+              "duration": 76987,
               "status": "passed"
             },
             "match": {
@@ -303,7 +303,7 @@
         "steps": [
           {
             "result": {
-              "duration": 439201,
+              "duration": 343011,
               "status": "passed"
             },
             "line": 34,
@@ -327,7 +327,7 @@
         "before": [
           {
             "result": {
-              "duration": 150300,
+              "duration": 94739,
               "status": "passed"
             },
             "match": {
@@ -342,7 +342,7 @@
         "after": [
           {
             "result": {
-              "duration": 145156,
+              "duration": 75948,
               "status": "passed"
             },
             "match": {
@@ -355,7 +355,7 @@
         "steps": [
           {
             "result": {
-              "duration": 324745,
+              "duration": 297624,
               "status": "passed"
             },
             "line": 38,
@@ -379,7 +379,7 @@
         "before": [
           {
             "result": {
-              "duration": 361516,
+              "duration": 129415,
               "status": "passed"
             },
             "match": {
@@ -394,7 +394,7 @@
         "after": [
           {
             "result": {
-              "duration": 306775,
+              "duration": 73583,
               "status": "passed"
             },
             "match": {
@@ -407,7 +407,7 @@
         "steps": [
           {
             "result": {
-              "duration": 384977,
+              "duration": 341705,
               "status": "passed"
             },
             "line": 42,
@@ -434,7 +434,7 @@
         "before": [
           {
             "result": {
-              "duration": 157526,
+              "duration": 96280,
               "status": "passed"
             },
             "match": {
@@ -449,7 +449,7 @@
         "after": [
           {
             "result": {
-              "duration": 156882,
+              "duration": 66275,
               "status": "passed"
             },
             "match": {
@@ -462,7 +462,7 @@
         "steps": [
           {
             "result": {
-              "duration": 314128,
+              "duration": 294441,
               "status": "passed"
             },
             "line": 46,
@@ -489,7 +489,7 @@
         "before": [
           {
             "result": {
-              "duration": 170066,
+              "duration": 130266,
               "status": "passed"
             },
             "match": {
@@ -504,7 +504,7 @@
         "after": [
           {
             "result": {
-              "duration": 158406,
+              "duration": 62301,
               "status": "passed"
             },
             "match": {
@@ -517,7 +517,7 @@
         "steps": [
           {
             "result": {
-              "duration": 396433,
+              "duration": 264415,
               "status": "passed"
             },
             "line": 50,
@@ -544,7 +544,7 @@
         "before": [
           {
             "result": {
-              "duration": 166396,
+              "duration": 82567,
               "status": "passed"
             },
             "match": {
@@ -559,7 +559,7 @@
         "after": [
           {
             "result": {
-              "duration": 171292,
+              "duration": 67084,
               "status": "passed"
             },
             "match": {
@@ -572,7 +572,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2316067,
+              "duration": 253465,
               "status": "passed"
             },
             "line": 54,
@@ -599,7 +599,7 @@
         "before": [
           {
             "result": {
-              "duration": 195126,
+              "duration": 96914,
               "status": "passed"
             },
             "match": {
@@ -614,7 +614,7 @@
         "after": [
           {
             "result": {
-              "duration": 227757,
+              "duration": 66175,
               "status": "passed"
             },
             "match": {
@@ -627,7 +627,7 @@
         "steps": [
           {
             "result": {
-              "duration": 356402,
+              "duration": 280636,
               "status": "passed"
             },
             "line": 58,
@@ -654,7 +654,7 @@
         "before": [
           {
             "result": {
-              "duration": 210238,
+              "duration": 98983,
               "status": "passed"
             },
             "match": {
@@ -669,7 +669,7 @@
         "after": [
           {
             "result": {
-              "duration": 141563,
+              "duration": 59693,
               "status": "passed"
             },
             "match": {
@@ -682,7 +682,7 @@
         "steps": [
           {
             "result": {
-              "duration": 381433,
+              "duration": 263528,
               "status": "passed"
             },
             "line": 62,
@@ -704,13 +704,66 @@
             "name": "@End2End"
           }
         ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 84732,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.setup()"
+            }
+          }
+        ],
+        "line": 73,
+        "name": "browser closed",
+        "description": "",
+        "id": "free-crm-application-testing;browser-closed",
+        "after": [
+          {
+            "result": {
+              "duration": 106343,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[2]\u003e but was:\u003c[0]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat steps.TagDefinitions.this_is_a_close_browser_test(TagDefinitions.java:128)\n\tat ✽.This is a close browser test(src/test/resources/tag.feature:74)\n",
+              "duration": 213317486,
+              "status": "failed"
+            },
+            "line": 74,
+            "name": "This is a close browser test",
+            "match": {
+              "location": "TagDefinitions.this_is_a_close_browser_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
       }
     ],
     "name": "Free CRM application testing",
     "description": "",
     "id": "free-crm-application-testing",
     "keyword": "Feature",
-    "uri": "/home/kshitijbaluni/IdeaProjects/cucumber-application/src/test/resources/tag.feature",
+    "uri": "src/test/resources/tag.feature",
     "tags": [
       {
         "name": "@FunctionalTest",

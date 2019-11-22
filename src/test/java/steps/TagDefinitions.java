@@ -3,6 +3,9 @@ package steps;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
+import org.junit.Assert;
+
+import java.io.*;
 
 public class TagDefinitions {
 
@@ -96,6 +99,48 @@ public class TagDefinitions {
     @Given("^This is a close browser test$")
     public void this_is_a_close_browser_test() {
         System.out.println("Thread ID :" + Thread.currentThread().getId() + " - Tag Feature");
+        File file = new File("/home/kshitijbaluni/IdeaProjects/cucumber-application/test.txt");
+
+        System.out.println("File name::" + file.getName());
+
+        String st = "";
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            while ((st = br.readLine()) != null) {
+                System.out.println(st);
+                br.close();
+                break;
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if (st.equals("0")) {
+
+            try {
+                BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+                bw.write("1");
+                bw.close();
+                System.out.println("Writing 1");
+                Assert.assertEquals("2", "0");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+
+            try {
+                BufferedWriter bw = new BufferedWriter(new FileWriter(file, false));
+                bw.write("0");
+                bw.close();
+                System.out.println("Writing 0");
+                Assert.assertEquals("2", "2");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }

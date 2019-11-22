@@ -9,7 +9,7 @@ Feature: Free CRM application testing
   Scenario: Login with incorrect username and correct password
     Given This is a invalid login test
 
-  @SmokeTest
+
   Scenario: Create a contact
     Given This is a contact test case
 
@@ -69,7 +69,6 @@ Feature: Free CRM application testing
   Scenario: Application Logout
     Given This is a logout test
 
-  @SmokeTest
   Scenario: browser closed
     Given This is a close browser test
 
