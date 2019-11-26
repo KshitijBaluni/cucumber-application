@@ -1,17 +1,12 @@
 package steps;
 
-import cucumber.api.java.en.Given;
-import org.junit.Assert;
-
-import java.io.*;
+import io.cucumber.java.en.Given;
 
 public class TagDefinitions {
-
 
     @Given("^This is a valid login test$")
     public void this_is_a_valid_login_test() {
         System.out.println("Thread ID :" + Thread.currentThread().getId() + " - Tag Feature");
-//        Assert.fail();
     }
 
     @Given("^This is a invalid login test$")
@@ -98,7 +93,7 @@ public class TagDefinitions {
     @Given("^This is a close browser test$")
     public void this_is_a_close_browser_test() {
         System.out.println("Thread ID :" + Thread.currentThread().getId() + " - Tag Feature");
-        File file = new File("/home/kshitijbaluni/IdeaProjects/cucumber-application/test.txt");
+        /*File file = new File("/home/kshitijbaluni/IdeaProjects/cucumber-application/test.txt");
 
         System.out.println("File name::" + file.getName());
 
@@ -139,7 +134,7 @@ public class TagDefinitions {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
     }
 
 }
