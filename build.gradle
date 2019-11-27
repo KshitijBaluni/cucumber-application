@@ -5,9 +5,7 @@ plugins {
 group 'cucumber.jvm.application'
 version '1.0-SNAPSHOT'
 
-
 sourceCompatibility = 1.8
-
 
 repositories {
     mavenCentral()
@@ -20,13 +18,10 @@ test {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.7.4'
-    testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '4.7.4'
-    compile group: 'io.cucumber', name: 'cucumber-java', version: '4.7.4'
-    compile group: 'io.cucumber', name: 'cucumber-testng', version: '4.7.4'
-    compile group: 'io.cucumber', name: 'cucumber-jvm', version: '4.7.4', ext: 'pom'
-    testImplementation 'io.rest-assured:rest-assured:4.1.2'
-    compile group: 'org.apache.ant', name: 'ant', version: '1.10.7'
+    testCompile 'io.cucumber:cucumber-junit:4.5.0'
+    compile 'io.cucumber:cucumber-java:4.5.0'
+    compile group: 'io.cucumber', name: 'cucumber-testng', version: '4.5.0'
+    compile 'io.rest-assured:rest-assured:3.3.0'
 }
 
 configurations {
@@ -35,33 +30,36 @@ configurations {
     }
 }
 
-
-
 task cucumber() {
     dependsOn assemble, compileTestJava
     doLast {
         javaexec {
             println "======================Inside task cucumber =========================="
 
-            main = "cucumber.api.cli.Main"
+            main = "io.cucumber.core.cli.Main"
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
 
-            String cucumberTagArgument;
-            String cucumberTag;
-
+            String cucumberTagArgument
+            String cucumberTag
+            String threadsTagArgument
+            String threadsTag
 
             try {
                 print("=================inside try====================")
                 cucumberTagArgument = '--tags'
                 cucumberTag = project.property('cucumberTag')
+                threadsTagArgument = '--threads'
+                threadsTag = project.property('threadsTag')
+                print("cucmner tag =" + cucumberTag + "  threads Count= "+threadsTag)
             } catch (MissingPropertyException e) {
                 print("=================inside catch====================")
                 e.printStackTrace()
                 cucumberTagArgument = new String()
                 cucumberTag = new String()
+                threadsTagArgument = new String()
+                threadsTag = new String()
             }
-            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', 'src/test/resources', cucumberTagArgument, cucumberTag, "--threads", "4"]
-
+            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', 'src/test/resources', "--tags", "not @End2End", cucumberTagArgument, cucumberTag, threadsTagArgument, threadsTag]
         }
     }
 }
@@ -71,7 +69,7 @@ task cucumberRerun() {
     doLast {
         javaexec {
             println "======================Inside task cucumberRerun =========================="
-            main = "cucumber.api.cli.Main"
+            main = "io.cucumber.core.cli.Main"
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
             args = ['@build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FailedTestsReRun/', '--plugin', 'json:build/json/FailedTestsReRun/output.json', '--glue', 'steps']
         }
