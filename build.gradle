@@ -32,10 +32,10 @@ configurations {
 
 task cucumber() {
     dependsOn assemble, compileTestJava
+
     doLast {
         javaexec {
             println "======================Inside task cucumber =========================="
-
             main = "io.cucumber.core.cli.Main"
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
 
@@ -50,7 +50,7 @@ task cucumber() {
                 cucumberTag = project.property('cucumberTag')
                 threadsTagArgument = '--threads'
                 threadsTag = project.property('threadsTag')
-                print("cucmner tag =" + cucumberTag + "  threads Count= "+threadsTag)
+                print("cucmner tag =" + cucumberTag + "  threads Count= " + threadsTag)
             } catch (MissingPropertyException e) {
                 print("=================inside catch====================")
                 e.printStackTrace()
@@ -59,7 +59,7 @@ task cucumber() {
                 threadsTagArgument = new String()
                 threadsTag = new String()
             }
-            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', 'src/test/resources', "--tags", "not @End2End", cucumberTagArgument, cucumberTag, threadsTagArgument, threadsTag]
+            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', 'src/test/resources', "--tags", "not @End2End", cucumberTagArgument, cucumberTag, threadsTagArgument, threadsTag, "-p" ,"timeline:build/"]
         }
     }
 }

@@ -5,6 +5,7 @@ import org.testng.Assert;
 
 import java.io.*;
 
+
 public class TagDefinitions {
 
     @Given("^This is a valid login test$")
@@ -55,7 +56,6 @@ public class TagDefinitions {
     @Given("^This is a search case test$")
     public void this_is_a_search_case_test() {
         System.out.println("Thread ID :" + Thread.currentThread().getId() + " - Tag Feature");
-
     }
 
     @Given("^This is a search task test$")
@@ -102,11 +102,11 @@ public class TagDefinitions {
 
         String st = "";
 
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(file));
+        BufferedWriter bw;
+        try(BufferedReader br = new BufferedReader(new FileReader(file))) {
+
             while ((st = br.readLine()) != null) {
                 System.out.println(st);
-                br.close();
                 break;
             }
         } catch (FileNotFoundException e) {
@@ -118,7 +118,7 @@ public class TagDefinitions {
         if (st.equals("0")) {
 
             try {
-                BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+                bw = new BufferedWriter(new FileWriter(file));
                 bw.write("1");
                 bw.close();
                 System.out.println("Writing 1");
@@ -129,7 +129,7 @@ public class TagDefinitions {
         } else {
 
             try {
-                BufferedWriter bw = new BufferedWriter(new FileWriter(file, false));
+                bw = new BufferedWriter(new FileWriter(file, false));
                 bw.write("0");
                 bw.close();
                 System.out.println("Writing 0");
