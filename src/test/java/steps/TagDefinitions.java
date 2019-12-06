@@ -2,17 +2,24 @@ package steps;
 
 import io.cucumber.java.en.Given;
 import org.testng.Assert;
+import thread.ScenarioThread;
 
 import java.io.*;
 
-
 public class TagDefinitions {
+
+    ScenarioThread scenarioThread = null;
 
     @Given("^This is a valid login test$")
     public void this_is_a_valid_login_test() throws InterruptedException {
-        Thread.sleep(1000);
         System.out.println("Thread ID :" + Thread.currentThread().getId() + " - Tag Feature: This is a valid login");
-
+        scenarioThread = new ScenarioThread();
+        synchronized (scenarioThread) {
+            System.out.println("ScenarioThread Created.");
+            //scenarioThread.wait();
+            System.out.println("ScenarioThread Wait is Over...! ");
+            scenarioThread.run();
+        }
     }
 
     @Given("^This is a invalid login test$")
@@ -22,7 +29,7 @@ public class TagDefinitions {
     }
 
     @Given("^This is a contact test case$")
-    public void this_is_a_contact_test_case()throws InterruptedException {
+    public void this_is_a_contact_test_case() throws InterruptedException {
         Thread.sleep(1000);
         System.out.println("Thread ID :" + Thread.currentThread().getId() + " - Tag Feature: This is a contact test case");
     }
@@ -115,14 +122,18 @@ public class TagDefinitions {
     public void this_is_a_close_browser_test() throws InterruptedException {
         Thread.sleep(1000);
         System.out.println("Thread ID :" + Thread.currentThread().getId() + " - Tag Feature: This is a close browser test");
+        if (scenarioThread != null) {
+            synchronized (scenarioThread) {
+                scenarioThread.notify();
+            }
+        }
         File file = new File("/home/kshitijbaluni/IdeaProjects/cucumber-application/test.txt");
 
         System.out.println("File name::" + file.getName());
 
         String st = "";
 
-        BufferedWriter bw;
-        try(BufferedReader br = new BufferedReader(new FileReader(file))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 
             while ((st = br.readLine()) != null) {
                 System.out.println(st);
@@ -136,10 +147,9 @@ public class TagDefinitions {
 
         if (st.equals("0")) {
 
-            try {
-                bw = new BufferedWriter(new FileWriter(file));
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(file));) {
+
                 bw.write("1");
-                bw.close();
                 System.out.println("Writing 1");
                 Assert.assertEquals("2", "0");
             } catch (IOException e) {
@@ -147,10 +157,8 @@ public class TagDefinitions {
             }
         } else {
 
-            try {
-                bw = new BufferedWriter(new FileWriter(file, false));
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(file, false));) {
                 bw.write("0");
-                bw.close();
                 System.out.println("Writing 0");
                 Assert.assertEquals("2", "2");
             } catch (IOException e) {
@@ -158,5 +166,4 @@ public class TagDefinitions {
             }
         }
     }
-
 }
