@@ -5,3 +5,8 @@ Feature: Weather Rest API test Automation
     When The api giving JSON response body
     And API have weather related data
     Then API is working Properly
+
+  Scenario: test data
+    Given its is okay to have fun with work
+    When this is right
+    Then it is okay
