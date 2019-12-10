@@ -22,6 +22,13 @@ dependencies {
     compile 'io.cucumber:cucumber-java:4.5.0'
     compile group: 'io.cucumber', name: 'cucumber-testng', version: '4.5.0'
     compile 'io.rest-assured:rest-assured:3.3.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.12.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.12.1'
+    testCompile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.12.1'
+
+
+
+
 }
 
 configurations {
@@ -59,7 +66,7 @@ task cucumber() {
                 threadsTagArgument = new String()
                 threadsTag = new String()
             }
-            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', 'src/test/resources', "--tags", "not @End2End", cucumberTagArgument, cucumberTag, threadsTagArgument, threadsTag, "-p" ,"timeline:build/"]
+            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', 'src/test/features', "--tags", "not @End2End", cucumberTagArgument, cucumberTag, threadsTagArgument, threadsTag, "-p" ,"timeline:build/"]
         }
     }
 }

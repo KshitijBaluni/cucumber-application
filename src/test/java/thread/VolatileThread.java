@@ -38,7 +38,6 @@ class VolatileProducer implements Runnable {
     }
 }
 
-
 class VolatileConsumer implements Runnable {
     Data data;
 
