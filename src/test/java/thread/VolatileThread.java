@@ -12,7 +12,6 @@ class Data {
         this.num = num;
         System.out.println(Thread.currentThread().getName() + " - Set ::" + num);
     }
-
 }
 
 class VolatileProducer implements Runnable {
@@ -68,5 +67,4 @@ public class VolatileThread {
         VolatileProducer volatileProducer = new VolatileProducer(data1);
         VolatileConsumer volatileConsumer = new VolatileConsumer(data2);
     }
-
 }

@@ -34,24 +34,19 @@ public class WeatherDefinitions {
         //Weather weather = get(SetupDefinitions.uri).getBody().as(Weather.class);
         //System.out.println("Weather Data ::" + weather);
 
-
-
         Weather weather1 = get(SetupDefinitions.uri).getBody().as(Weather.class);
 
         System.out.println("Weather Data ::" + weather1.toString());
         /*Post post = get("http://localhost:3000/posts/1").getBody().as(Post.class);
         System.out.println("Post data ::" + post.toString());*/
-
     }
 
     @When("^API have weather related data$")
     public void api_have_weather_related_data() throws Exception {
-
     }
 
     @Then("^API is working Properly$")
     public void api_is_working_Properly() throws Exception {
-
     }
 
 }
