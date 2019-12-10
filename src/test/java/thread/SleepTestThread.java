@@ -1,6 +1,5 @@
 package thread;
 
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -25,7 +24,6 @@ public class SleepTestThread {
                 log.log(Level.WARNING, e.toString());
             }
             System.out.println("Message ::" + message);
-
         }
 
         log.log(Level.INFO, String.valueOf(interruptStatus));
@@ -37,6 +35,5 @@ public class SleepTestThread {
                 log.log(Level.INFO, e.toString() + "Interrupt Status Check");
             }
         }
-
     }
 }
