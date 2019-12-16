@@ -86,5 +86,4 @@ public class InterThread {
         Consumer consumer = new Consumer(q);
         Producer producer = new Producer(q);
     }
-
 }
