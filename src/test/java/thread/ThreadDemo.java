@@ -1,6 +1,7 @@
 package thread;
 
 public class ThreadDemo {
+
     public static void main(String[] args) throws InterruptedException {
 
         Thread executorThread1 = new Thread(() -> {
@@ -13,6 +14,7 @@ public class ThreadDemo {
                 }
             }
         });
+
         executorThread1.start();
         Thread.currentThread().join();
 

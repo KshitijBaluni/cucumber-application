@@ -1,6 +1,5 @@
 package thread;
 
-
 import java.util.Random;
 
 class Drop {
@@ -89,6 +88,7 @@ class GuardedConsumer implements Runnable {
             }
         }
     }
+
 }
 
 public class GuardedBlock {
