@@ -25,10 +25,6 @@ dependencies {
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.12.1'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.12.1'
     testCompile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.12.1'
-
-
-
-
 }
 
 configurations {
@@ -57,7 +53,7 @@ task cucumber() {
                 cucumberTag = project.property('cucumberTag')
                 threadsTagArgument = '--threads'
                 threadsTag = project.property('threadsTag')
-                print("cucmner tag =" + cucumberTag + "  threads Count= " + threadsTag)
+                print("cucmber tag =" + cucumberTag + "  threads Count= " + threadsTag)
             } catch (MissingPropertyException e) {
                 print("=================inside catch====================")
                 e.printStackTrace()
@@ -66,7 +62,7 @@ task cucumber() {
                 threadsTagArgument = new String()
                 threadsTag = new String()
             }
-            args = ['--plugin', 'rerun:build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', 'src/test/features', "--tags", "not @End2End", cucumberTagArgument, cucumberTag, threadsTagArgument, threadsTag, "-p" ,"timeline:build/"]
+            args = ['--plugin', 'rerun:temp/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FirstRun/', '--plugin', 'json:build/json/FirstRun/output.json', '--glue', 'steps', 'src/test/features', "--tags", "not @End2End", cucumberTagArgument, cucumberTag, threadsTagArgument, threadsTag, "-p" ,"timeline:build/"]
         }
     }
 }
@@ -78,7 +74,7 @@ task cucumberRerun() {
             println "======================Inside task cucumberRerun =========================="
             main = "io.cucumber.core.cli.Main"
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
-            args = ['@build/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FailedTestsReRun/', '--plugin', 'json:build/json/FailedTestsReRun/output.json', '--glue', 'steps']
+            args = ['@temp/rerun.txt', '--plugin', 'pretty', '--plugin', 'html:build/html/FailedTestsReRun/', '--plugin', 'json:build/json/FailedTestsReRun/output.json', '--glue', 'steps']
         }
     }
 }
